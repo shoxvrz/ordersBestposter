@@ -1,0 +1,60 @@
+.customer {
+  height: 57%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.customer__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.customer__main--info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.customer__main--info p {
+  font-size: clamp(1.15rem, 0.5rem + 2.6667vw, 2.5rem);
+  color: #125488;
+  font-weight: 500;
+}
+.customer__main--info span {
+  font-size: clamp(1.35rem, 0.5rem + 2.6667vw, 2.5rem);
+  color: #2a93d5;
+  font-weight: 500;
+}
+.customer__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.customer__header--icon {
+  color: #125488;
+}
+.customer__header h2 {
+  font-size: clamp(1.65rem, 0.5rem + 2.6667vw, 2.5rem);
+  color: #125488;
+}
+.customer__bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.customer__bottom div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.85rem, 0.15rem + 2.6667vw, 2.5rem);
+  color: #125488;
+}
+.customer__bottom div .socialIcon {
+  font-size: 18px;
+}/*# sourceMappingURL=InfoCustomer.css.map */

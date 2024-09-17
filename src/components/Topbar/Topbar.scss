@@ -1,0 +1,33 @@
+.topbar{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px 10px 15px;
+    border-bottom: 1px solid #2a93d5;
+    &__logo{
+        font-size: clamp(1.5625rem, 1rem + 2vw, 2.5rem);
+        color: #125488;
+    }
+    &__language{
+        display: flex;
+        align-items: center;
+        color: #125488;
+        border: 1px solid;
+        padding: 3px;
+        border-radius: 15px;
+
+        & select{
+            color: #125488;
+            padding: 0px  5px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+    
+            & option{
+                border: none;
+                outline: none;
+            }
+    }
+    }   
+}

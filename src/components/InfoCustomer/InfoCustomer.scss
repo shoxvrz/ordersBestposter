@@ -1,0 +1,71 @@
+.customer{
+    height: 57%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    &__main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            & p{
+                font-size: clamp(1.15rem, 0.5rem + 2.6667vw, 2.5rem);
+                color: #125488;
+                font-weight: 500;
+            }
+            & span{
+                font-size: clamp(1.35rem, 0.5rem + 2.6667vw, 2.5rem);
+                color: #2a93d5;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        &--icon{
+            color: #125488;
+        }
+
+        & h2{
+            font-size: clamp(1.65rem, 0.5rem + 2.6667vw, 2.5rem);
+            color: #125488;
+        }
+    }
+
+    &__bottom{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        & div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(0.85rem, 0.15rem + 2.6667vw, 2.5rem);
+            color: #125488;
+
+            & .socialIcon{
+                font-size: 18px;
+            }
+        }
+    }
+
+}

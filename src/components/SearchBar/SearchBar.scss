@@ -1,0 +1,32 @@
+.searchBar {
+    height: 10%;
+  display: flex;
+  padding: 15px 15px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  & input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid #125488;
+    border-radius: 20px;
+    outline: none;
+    color: #37caec;
+  }
+  & input::placeholder {
+    color: #37caec;
+  }
+  & button {
+    padding: 8px 8px;
+    border: 1px solid #125488;
+    background: transparent;
+    color: #125488;
+    border-radius: 20px;
+  }
+  & button:hover{
+    cursor: pointer;
+    background: #125488;
+    color: #fff;
+  }
+}
