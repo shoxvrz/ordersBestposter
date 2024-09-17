@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./InfoCustomer.scss";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import TelegramIcon from '@mui/icons-material/Telegram';
