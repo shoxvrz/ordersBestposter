@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { AppDispatch } from '../../toolkit/store'; // Import AppDispatch type
 import { getOrderById } from '../../toolkit/features/orderSlice';
-import './SearchBar.scss'
+import './SearchBar.scss';
 
 const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>(); // Type the dispatch function
 
   const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value);
@@ -13,7 +14,7 @@ const SearchBar: React.FC = () => {
 
   const searchHandler = () => {
     if (input.trim()) {
-      dispatch(getOrderById(input));
+      dispatch(getOrderById(input)); // No TypeScript error expected here
     }
   };
 
