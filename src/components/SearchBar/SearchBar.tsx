@@ -1,25 +1,31 @@
-import React, { useState } from "react";
-import "./SearchBar.scss";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { getOrderById } from '../../toolkit/features/orderSlice';
+import './SearchBar.scss'
 
-const SearchBar = () => {
+const SearchBar: React.FC = () => {
   const [input, setInput] = useState<string>('');
+  const dispatch = useDispatch();
 
-  // Change the event type to React.ChangeEvent<HTMLInputElement>
   const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(event.target.value); // Use event.target.value to get the input value
+    setInput(event.target.value);
   };
 
-  console.log(input);
-  
+  const searchHandler = () => {
+    if (input.trim()) {
+      dispatch(getOrderById(input));
+    }
+  };
+
   return (
-    <div className="searchBar"> 
+    <div className="searchBar">
       <input
         type="text"
         placeholder="Buyurtma id raqamini kiriting..."
         value={input}
-        onChange={inputHandler} // Attach the event handler to the input
+        onChange={inputHandler}
       />
-      <button>Qidirish</button>
+      <button onClick={searchHandler}>Qidirish</button>
     </div>
   );
 };
