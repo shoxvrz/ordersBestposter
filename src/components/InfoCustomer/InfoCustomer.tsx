@@ -25,6 +25,9 @@ const InfoCustomer = () => {
           <p>Manzil:</p> <span>Jizzax Sh</span>
         </div>
         <div className="customer__main--info">
+          <p>Buyurtma Sanasi:</p> <span>12/03/24</span>
+        </div>
+        <div className="customer__main--info">
           <p>Telegram/Instagram:</p> <span>@shoxvrzz</span>
         </div>
       </div>

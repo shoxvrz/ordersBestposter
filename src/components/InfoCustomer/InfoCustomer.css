@@ -18,14 +18,14 @@
   align-items: flex-start;
 }
 .customer__main--info p {
-  font-size: clamp(1.15rem, 0.5rem + 2.6667vw, 2.5rem);
+  font-size: clamp(0.65rem, 0.25rem + 2.6667vw, 2.5rem);
   color: #125488;
-  font-weight: 500;
+  font-weight: 600;
 }
 .customer__main--info span {
-  font-size: clamp(1.35rem, 0.5rem + 2.6667vw, 2.5rem);
+  font-size: clamp(0.85rem, 0.5rem + 2.6667vw, 2.5rem);
   color: #2a93d5;
-  font-weight: 500;
+  font-weight: 600;
 }
 .customer__header {
   width: 100%;
