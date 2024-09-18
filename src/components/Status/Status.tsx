@@ -12,19 +12,7 @@ import './Status.scss';
 const Status = () => {
   const { order } = useSelector((state: RootState) => state.order);
 
-  // Map status to the active step index
-  const getActiveStep = (status: string) => {
-    switch (status) {
-      case 'Buyurtma olindi!':
-        return 0;
-      case 'Buyurtma tayyor!':
-        return 1;
-      case 'Buyurtma jonatildi!':
-        return 2;
-      default:
-        return 0; // Default to the first step if status is unknown
-    }
-  };
+
 
   return (
     order?.id ? (
@@ -36,7 +24,7 @@ const Status = () => {
             sx={{ color: "#125488" }}
           />
         </div>
-        <Stepper className="status__stepper" activeStep={getActiveStep(order.status)} alternativeLabel>
+        <Stepper className="status__stepper" activeStep={order.status} alternativeLabel>
           <Step>
             <StepLabel className="status__label">
               <div className="status__label--text">

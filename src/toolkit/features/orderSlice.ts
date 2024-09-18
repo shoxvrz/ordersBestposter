@@ -10,7 +10,7 @@ interface Order {
   manzil: string;
   sana: string;
   telegInsta: string;
-  status: string;
+  status: number;
 }
 
 // Define OrderState interface
